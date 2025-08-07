@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Original Animations GOOFTOON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdown = document.querySelector('.dropdown');
+      const menu = dropdown.querySelector('.dropdown-menu');
+      let timeout;
+
+      dropdown.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        menu.classList.add('show');
+      });
+
+      dropdown.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+          menu.classList.remove('show');
+        }, 1000); // 1 secunda intarziere
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+  <div class="header-content">
+    <img src="img/ChatGPT Image 30 iul. 2025, 18_32_03.png" alt="Logo" class="badge" style="width: 80px; height: 80px;">
+      <div class="header-text">
+        <h1 class="site-title">Original Animations GOOFTOON</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="">Shows ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="1shows.html">Tomorow Shows</a></li>
+                <li><a href="2shows.html">Today Shows</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="card-grid">
+      <div class="card">
+        <h2>ToonamiX</h2>
+        <p>Space janitors crash-land on the filthiest planet in the galaxy</p>
+        <a href="show1.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Kiki & Whiskers</h2>
+        <p> A clever bird and a clumsy cat solve backyard mysteries.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Zorblax & Sons</h2>
+        <p>An alien family tries to blend into Earth’s strange society.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Tino the Tiny Bot</h2>
+        <p>An abandoned robot learns about emotions from a lonely child.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Talking Garden</h2>
+        <p>An abandoned robot learns about emotions from a lonely child.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Shadow Boys</h2>
+        <p>A magical garden where flowers tell ancient stories at night.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Flame Squirrels</h2>
+        <p>Two brothers find a hidden world where shadows are alive.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Fritz & Zitz</h2>
+        <p>Three ninja squirrels battle evil owls to protect their forest.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+      <div class="card">
+        <h2>Schoolhouse Rock</h2>
+        <p>A grumpy rabbit and an anxious crab set out on a wild road trip.</p>
+        <a href="404.html"><button>Vezi mai mult</button></a>
+      </div>
+    </section>
+  </main>
+    <footer>
+    <p>&copy; 2025 GOOFTOON</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdown = document.querySelector('.dropdown');
+      const menu = dropdown.querySelector('.dropdown-menu');
+      let timeout;
+
+      dropdown.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        menu.classList.add('show');
+      });
+
+      dropdown.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+          menu.classList.remove('show');
+        }, 1000); // 1 secunda intarziere
+      });
+    });
+  </script>
+</head>
+<body>
+    <header>
+  <div class="header-content">
+    <img src="img/ChatGPT Image 30 iul. 2025, 18_32_03.png" alt="Logo" class="badge" style="width: 80px; height: 80px;">
+      <div class="header-text">
+        <h1 class="site-title">Original Animations GOOFTOON</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="">Shows ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="1shows.html">Tomorow Shows</a></li>
+                <li><a href="2shows.html">Today Shows</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="error-container">
+    <p class="error-code">404</p>
+    <p class="error-message">Nothing here...</p>
+    <a href="index.html">Back home</a>
+  </main>
+
+  <footer>
+    &copy; 2025 GOOFTOON
+  </footer>
+</body>
+</html>

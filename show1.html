@@ -1,0 +1,134 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Original Animations GOOFTOON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdown = document.querySelector('.dropdown');
+      const menu = dropdown.querySelector('.dropdown-menu');
+      let timeout;
+
+      dropdown.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        menu.classList.add('show');
+      });
+
+      dropdown.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+          menu.classList.remove('show');
+        }, 1000); // 1 secunda intarziere
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+  <div class="header-content">
+    <img src="img/ChatGPT Image 30 iul. 2025, 18_32_03.png" alt="Logo" class="badge" style="width: 80px; height: 80px;">
+      <div class="header-text">
+        <h1 class="site-title">Original Animations GOOFTOON</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="">Shows ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="1shows.html">Tomorow Shows</a></li>
+                <li><a href="2shows.html">Today Shows</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="gallery">
+      <h2>ToonamiX</h2>
+      <div class="paragraf">
+        <p>
+        Step into a universe of laughter, color, and imagination!
+        This is the official website for all our original animated series, <B>ToonamiX</B> — a place where characters come to life, stories burst with creativity, and every episode brings something new.
+
+        From fast-paced slapstick comedies to heartwarming adventures, our cartoons are made to bring smiles, spark curiosity, and inspire creativity in kids and animation fans of all ages. ToonamiX is a fast-paced animated comedy series featuring a cast of unpredictable characters in rotating, self-contained episodes. Some stories are solo character segments, while others feature chaotic duos or rivalries. Every episode brings new gags, new combinations, and unexpected twists — all driven by distinct personalities, slapstick energy, and cartoon logic.
+
+        Although it’s full of wild fun and over-the-top moments, ToonamiX is also about friendship, teamwork, and finding joy in the little things. Through laughter, mishaps, and unexpected partnerships, the show encourages kids to be more united, to embrace their differences, and to always share a smile.
+
+        There’s no ongoing plot — just pure fun, expressive animation, and total creative freedom. It’s the kind of world where a swamp frog can outsmart a wolf, a rabbit can live in the forest, and a pampered cat has no idea what chaos is coming next.
+        Episode Structure
+        Each episode includes 1 to 3 short segments.
+
+        Stories rotate between solo adventures and character pairings.
+
+        Characters are placed in dynamic combinations to maximize comedy.
+
+        Episodes are unpredictable — there's no set formula.
+
+        Main Characters:</p>
+        <h3>Buster Bunny</h3>
+        <div class="paragraf">
+        <p>A hyperactive swamp rabbit with too much energy and not enough impulse control. Buster is clever, fast, and full of tricks — usually the target of Wally Wolf's chase attempts. He lives in the forest and treats it like his personal prank playground.</p></div>
+
+        <h3>Wally Wolf</h3>
+        <div class="paragraf">
+        <p>Grumpy, unlucky, and constantly trying to catch Buster — with no success. Wally also lives in the forest, but he’d love it a lot more if Buster weren’t around. He tries to be serious and cunning, but it always backfires.</p></div>
+        <h3>Mysti Minsk</h3>
+        <div class="paragraf">
+        <p>A posh, dramatic cat who spends her time lounging on the windowsill of a cozy countryside home. Mysti is obsessed with elegance and despises dirt, noise, or chaos — which unfortunately follow her anyway. Sometimes, she crosses paths with Buster or Wally, and the results are never pretty.</p></div>
+
+        <h3>Stutz the Frog</h3>
+        <div class="paragraf">
+        <p>A chill swamp frog who’s just trying to relax — but somehow always gets caught up in Buster’s wild plans. He lives in the marsh and doesn’t move fast, but he’s loyal, good-natured, and sneakily clever when it counts. He and Buster are best friends.</p></div>
+
+        <h3>Where They Live</h3>
+        <div class="paragraf">
+        <p>Buster Bunny: Lives in the forest — wild, muddy, and full of hiding places.
+        <br>
+        Wally Wolf: Also lives in the forest, always plotting ways to outsmart Buster.
+        <br>
+        Mysti Minsk: Lives indoors, seen on a windowsill in a clean, cozy home.
+        <br>
+        Stutz the Frog: Lives in the swamp — slow waters, lily pads, and peaceful vibes.</p></div>
+        <h3>Episode Categories</h3>
+        <div class="paragraf">
+        <p>
+        These can be used to organize the series on a streaming platform or site:
+        <br>
+        Buster vs. Wally – Classic chase segments with slapstick action.
+        <br>
+        Swamp Buddies – Laid-back episodes with Buster and Stutz.
+        <br>
+        Mysti’s World – Solo stories focused on Mysti’s glamorous (and chaotic) lifestyle.
+        <br>
+        Mashups & Mayhem – Unexpected character pairings and surprise crossovers.
+        <br>
+        Stutz Solo – Rare calm-before-the-storm stories starring Stutz.
+        <br>
+        Tone and Style
+        <br>
+        Genre: Comedy, Cartoon Shorts
+        <br>
+        Visual Style: Bold, vintage-inspired character design with expressive animation
+        <br>
+        Tone: Light, silly, fast-paced, and unpredictable
+        <br>
+        Audience: Kids, teens, and anyone who loves zany cartoon humor
+        </p>
+    </section>
+    <div class="video-container">
+    <video width="640" height="360" controls autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        Browserul tău nu suportă elementul video.
+    </video>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 GOOFTOON</p>
+  </footer>
+</body>
+</html>
